@@ -1,23 +1,22 @@
-//
-//  ViewController.swift
-//  Smiley
-//
-//  Created by Derrick McMillen on 6/28/16.
-//  Copyright © 2016 demc. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewDidLoad()
+    {
+        super.viewDidLoad();
+        
+        let frame = CGRect(x: 0, y: 20, width: self.view.frame.width, height: 400);
+        let smiley = Smiley(frame: frame);
+        smiley.backgroundColor = UIColor.blueColor();
+        view.addSubview(smiley);
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning();
+        
     }
 
 
